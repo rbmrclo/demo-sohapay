@@ -1,0 +1,64 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+<style>
+  body {
+    padding-top: 40px;
+  }
+</style>
+
+<div class="container" >
+  <h2 class="text-center"> Sohapay Summary </h2>
+  <br/>
+
+  <table class='table'>
+    <thead>
+      <tr>
+        <th> Param </th>
+        <th> Value </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td> Price </td>
+        <td> <%= "#{@price}" %> </td>
+      </tr>
+      <tr>
+        <td> Order Code </td>
+        <td> <%= "#{@order_code}" %> </td>
+      </tr>
+      <tr>
+        <td> Order Email </td>
+        <td> <%= "#{@order_email}" %> </td>
+      </tr>
+      <tr>
+        <td> Payment Name </td>
+        <td> <%= "#{@payment_name}" %> </td>
+      </tr>
+      <tr>
+        <td> Payment Coupon </td>
+        <td> <%= "#{@payment_coupon}" %> </td>
+      </tr>
+      <tr>
+        <td> Response Code </td>
+        <td> <%= "#{@response_code}" %> </td>
+      </tr>
+      <tr>
+        <td> Payment Bank Code </td>
+        <td> <%= "#{@payment_bank_code}" %> </td>
+      </tr>
+      <tr>
+        <td> Response Message </td>
+        <td> <%= "#{@response_message}" %> </td>
+      </tr>
+      <tr>
+        <td> Transaction Info </td>
+        <td> <%= "#{@transaction_info}" %> </td>
+      </tr>
+      <tr>
+        <td> Secure Code </td>
+        <td> <%= "#{@secure_code}" %> </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
