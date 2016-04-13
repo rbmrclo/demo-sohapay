@@ -1,0 +1,67 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+<style>
+  body {
+    padding-top: 40px;
+  }
+</style>
+
+<div class="container" >
+  <h2 class="text-center"> Sohapay Demo </h2>
+  <br/>
+  <form method="post" action=<%= "#{@gateway_url}" %> class="form-horizontal">
+
+    <div class="form-group">
+      <label for="return_url" class="col-sm-2 control-label"> Return Url </label>
+      <div class="col-sm-10">
+        <input type="text" id="return_url" name="return_url" value=<%= "#{@return_url}" %> class="form-control">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="order_code" class="col-sm-2 control-label"> Order Code </label>
+      <div class="col-sm-10">
+        <input type="text" id="order_code" name="order_code" value=<%= "#{@order_code}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="price" class="col-sm-2 control-label"> Price </label>
+      <div class="col-sm-10">
+        <input type="text" id="price" name="price" value=<%= "#{@price}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="order_email" class="col-sm-2 control-label"> Order Email </label>
+      <div class="col-sm-10">
+        <input type="text" id="order_email" name="order_email" value=<%= "#{@order_email}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="transaction_info" class="col-sm-2 control-label"> Transaction Info </label>
+      <div class="col-sm-10">
+        <input id="transaction_info" name="transaction_info" type="text" value=<%= "#{@transaction_info}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="embed_type" class="col-sm-2 control-label"> Embed Type </label>
+      <div class="col-sm-10">
+        <input id="embed_type" name="embed_type" type="text" value=<%= "#{@embed_type}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="language" class="col-sm-2 control-label"> Language </label>
+      <div class="col-sm-10">
+        <input type="text" id="language" name="language" value=<%= "#{@language}" %> class="form-control"/>
+      </div>
+    </div>
+
+
+    <div class="text-center">
+      <button type="Submit" name="btnSubmit" value="Submit" id="btnSubmit" class="btn btn-primary"/> Submit </button>
+    </div>
+  </form>
+</div>
